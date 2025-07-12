@@ -16,10 +16,9 @@ const lexend = Lexend({
 export default function Index() {
   return (
     <div className={`${lexend.className} w-screen min-h-screen`}>
-      <main className="w-screen max-w-screen flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+      <main className="w-screen max-w-screen">
         <Home />
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center"></footer>
     </div>
   );
 }
