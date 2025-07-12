@@ -184,11 +184,12 @@ export default function Navbar() {
         <NavigationMenuItem className="z-10">
           <NavigationMenuTrigger>Experience</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[200px] gap-4">
+            <ul className="grid w-[250px] gap-4">
               <li>
                 <NavigationMenuLink asChild>
-                  <Link href="#" className="text-red-500">
-                    Under contruction!
+                  <Link href="https://symphonicsco.com/">
+                    Internship at Symphonics Co. Ltd. as a Front-End Developer
+                    using frameworks such as Nextjs
                   </Link>
                 </NavigationMenuLink>
                 {/* <NavigationMenuLink asChild>
