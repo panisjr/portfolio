@@ -9,18 +9,18 @@ export interface latestProjectTypes {
 }
 const latestProject: latestProjectTypes[] = [
   {
-    projectName: "DRSchecker",
+    projectName: "DRSchecker - nextjs, gemini",
     description:
       "Depression Rating Scale Checker to assess one's stress level and provide advice",
     image: "/assets/images/drsLatest.png",
   },
   {
-    projectName: "ATLS",
+    projectName: "ATLS - python, react, tensorflow",
     description: "Automated Traffic Ligth System to lessen traffic congestion",
     image: "/assets/images/atls.png",
   },
   {
-    projectName: "CodePulse",
+    projectName: "CodePulse - react, nodejs",
     description:
       "A learning platform focused on programming languages, specifically Java and Python.",
     image: "/assets/images/codePulse.png",

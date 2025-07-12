@@ -11,10 +11,11 @@ import {
 import { Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "DRSchecker",
-    href: "/https://drschecker.vercel.app",
+    href: "https://drschecker.vercel.app",
     description:
       "Let me help you assess you level of stress and provide some advice that could help you to address emotional stress.",
   },
@@ -25,12 +26,12 @@ const components: { title: string; href: string; description: string }[] = [
   },
   {
     title: "CodePulse",
-    href: "/docs/primitives/progress",
+    href: "",
     description: "Under construction!.",
   },
   {
     title: "NoteAI",
-    href: "/docs/primitives/scroll-area",
+    href: "",
     description: "Under construction!.",
   },
 ];
@@ -60,6 +61,7 @@ export default function Navbar() {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
+  const router = useRouter();
   return (
     <NavigationMenu viewport={false}>
       <NavigationMenuList>
@@ -70,7 +72,12 @@ export default function Navbar() {
             <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
-                  <div className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md">
+                  <div
+                    onClick={() =>
+                      router.push("https://drschecker.vercel.app/")
+                    }
+                    className="cursor-pointer from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
+                  >
                     <div className="relative w-[50px] h-[50px]">
                       <Image
                         src={"/assets/images/ai.png"}
@@ -89,7 +96,7 @@ export default function Navbar() {
                   </div>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Introduction">
+              <ListItem href="#" title="Introduction">
                 Learn more about me . . .
               </ListItem>
               <div

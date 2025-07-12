@@ -17,7 +17,7 @@ export default function Home() {
         {/* Header */}
         <SlideDownOnLoad>
           <div className="flex flex-wrap items-center justify-evenly py-5 gap-4">
-            <div className={`${amarante.className} text-4xl`}>
+            <div className={`${amarante.className} text-4xl cursor-pointer`}>
               <span className="text-[#20b9f0]">R</span>
               <span>ams</span>
             </div>
