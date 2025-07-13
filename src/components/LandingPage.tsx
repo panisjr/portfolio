@@ -93,7 +93,7 @@ export default function LandingPage() {
       </div>
       <div className="w-full px-5 md:ps-[150px]">
         <ZoomInOnLoad>
-          <div className="relative w-[400px] h-[600px] rounded-md">
+          <div className="relative w-[500px] md:w-[400px] h-[600px] rounded-md">
             <Image
               src={"/assets/images/gradPic2.jpg"}
               alt="Graduation picture"

@@ -30,10 +30,10 @@ export default function FrameworksCards() {
       {icons.map((item, index) => (
         <div
           key={index}
-          className="w-[350px] h-[250px] flex items-center justify-center gap-2.5"
+          className="w-[350px] h-[250px] flex items-center justify-center gap-1"
         >
-          <div className="flex flex-col items-center justify-center gap-3">
-            <div className="relative w-[150px] h-[150px] rounded-full">
+          <div className="flex flex-col items-center justify-center gap-2">
+            <div className="relative w-[80px] h-[80px] rounded-full">
               <Image
                 src={`${item.icon}`}
                 alt="Project Image"
@@ -43,7 +43,7 @@ export default function FrameworksCards() {
                 className="object-contain rounded-full"
               />
             </div>
-            <p className={`${amarante.className} text-4xl text-center`}>
+            <p className={`${amarante.className} text-3xl text-center`}>
               {item.name}
             </p>
           </div>
