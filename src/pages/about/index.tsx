@@ -4,6 +4,9 @@ import ZoomInOnLoad from "@/components/animate/ZoomInOnLoad";
 import Image from "next/image";
 import GalleryCards from "@/components/cards/GalleryCards";
 import { Amarante, Lexend } from "next/font/google";
+import SlideUp from "@/components/animate/SlideUp";
+import SlideLeft from "@/components/animate/SlideLeft";
+import SlideRight from "@/components/animate/SlideRight";
 
 const amarante = Amarante({ weight: "400", subsets: ["latin"] });
 const lexend = Lexend({
@@ -12,22 +15,24 @@ const lexend = Lexend({
 });
 export default function Index() {
   return (
-    <div className={`w-full ${lexend.className}`}>
+    <div className={`w-full ${lexend.className} tracking-wider`}>
       <div className="mx-auto">
         {/* Header */}
         <Navbar />
         <div className="w-full flex items-center justify-center gap-5 px-10">
           <div className="w-[500px] h-52 text-[18px] font-light text-[#081b2b]">
-            <p>I am a Front-End Developer.</p>
-            <p>
-              I enjoy exploring new technologies and environments that enhance
-              my growth and efficiency as a programmer.
-            </p>
-            <p>
-              When I&apos;m not coding, you&apos;ll often find me cooking or
-              going for a jog and activities that help me recharge and stay
-              focused.
-            </p>
+            <SlideRight>
+              <p>I am a Front-End Developer.</p>
+              <p>
+                I enjoy exploring new technologies and environments that enhance
+                my growth and efficiency as a programmer.
+              </p>
+              <p>
+                When I&apos;m not coding, you&apos;ll often find me cooking or
+                going for a jog and activities that help me recharge and stay
+                focused.
+              </p>
+            </SlideRight>
           </div>
           <ZoomInOnLoad>
             <div className="relative w-[500px] md:w-[400px] h-[600px] rounded-md">
@@ -50,27 +55,60 @@ export default function Index() {
             <GalleryCards />
           </div>
         </div>
-        <div className="border-2 border-gray-300 bg-gray-100 shadow-md">
+        <div className="w-full min-h-auto border-2 border-gray-300 bg-gray-100 shadow-md">
           <div className="flex items-start p-10 justify-evenly">
             <div className="flex flex-col gap-10">
-              <p className={`${amarante.className} text-3xl`}>
-                <span className="text-[#20b9f0]">P</span>art Designe
-                <span className="text-[#ff6347]">r</span>
-              </p>
-              <ul className="font-light text-lg">
-                <li>UI/UX design</li>
-                <li>Interaction design</li>
-              </ul>
+              <SlideRight>
+                <p className={`${amarante.className} text-3xl`}>
+                  <span className="text-[#20b9f0]">P</span>art Designe
+                  <span className="text-[#ff6347]">r</span>
+                </p>
+                <ul className="font-light text-lg">
+                  <li>UI/UX design</li>
+                  <li>Interaction design</li>
+                  <li>Animation</li>
+                </ul>
+              </SlideRight>
             </div>
             <div></div>
             <div className="flex flex-col gap-10">
-              <p className={`${amarante.className} text-3xl`}>Part Coder</p>
-              <ul className="font-light text-lg">
-                <li>Front-End Development</li>
-                <li>HTML / CSS / Tailwindcss</li>
-                <li>JavaScript</li>
-                <li>Curly Tops fav</li>
-              </ul>
+              <SlideLeft>
+                <p className={`${amarante.className} text-3xl`}>Part Coder</p>
+                <ul className="font-light text-lg">
+                  <li>Front-End Development</li>
+                  <li>HTML / CSS / Tailwindcss</li>
+                  <li>JavaScript</li>
+                  <li>&#34;Curly Tops&#34;</li>
+                </ul>
+              </SlideLeft>
+            </div>
+          </div>
+        </div>
+        <div className="w-full h-fit p-10 font-light tracking-wider">
+          <div className="flex items-start justify-center gap-15 font-light">
+            <SlideUp>
+              <div className="relative w-[300px] h-[400px]">
+                <Image
+                  src={"/assets/images/dontMakeMeThink.jpg"}
+                  alt="Don't Make Me Think book"
+                  fill
+                  priority
+                  sizes="w-[300px] h-[400px]"
+                  className="object-cover"
+                />
+              </div>
+            </SlideUp>
+            <div className="py-10 max-w-[500px]">
+              <SlideLeft>
+                <p>
+                  A colleague recommended this book to me, and it&#34;s been a
+                  game-changer. I’ve always been curious about the way people
+                  think and make decisions, and even the first chapter gave me
+                  practical insights—especially useful as a front-end developer.
+                  Reading helps me appreciate the small details that contribute
+                  to better design decisions and outcomes.
+                </p>
+              </SlideLeft>
             </div>
           </div>
         </div>
