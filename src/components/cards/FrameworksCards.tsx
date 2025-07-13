@@ -32,7 +32,7 @@ export default function FrameworksCards() {
           key={index}
           className="w-[350px] h-[250px] flex items-center justify-center gap-1"
         >
-          <div className="flex flex-col items-center justify-center gap-2">
+          <div className="flex flex-col items-center justify-center gap-2 shadow-gray-500 shadow-lg rounded-md w-[190px] h-[200px] border border-slate-200">
             <div className="relative w-[80px] h-[80px] rounded-full">
               <Image
                 src={`${item.icon}`}
