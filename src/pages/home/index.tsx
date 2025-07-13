@@ -13,7 +13,7 @@ const amarante = Amarante({
 export default function Home() {
   return (
     <div className="w-full h-fit">
-      <div className="max-w-screen-2xl mx-auto px-4">
+      <div className=" mx-auto px-4">
         {/* Header */}
         <SlideDownOnLoad>
           <div className="flex flex-wrap items-center justify-evenly py-5 gap-4">
