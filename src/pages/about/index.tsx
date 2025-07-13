@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
-import ZoomInOnLoad from "@/components/animate/ZoomInOnLoad";
+import ZoomInOnLoad from "@/components/animate/ZoomIn";
 import Image from "next/image";
 import GalleryCards from "@/components/cards/GalleryCards";
 import { Amarante, Lexend } from "next/font/google";

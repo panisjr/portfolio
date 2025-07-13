@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { Amarante } from "next/font/google";
 import { Facebook, Github, Linkedin } from "lucide-react";
 import PopUpOnLoad from "./animate/PopUpOnLoad";
-import ZoomInOnLoad from "./animate/ZoomInOnLoad";
+import ZoomInOnLoad from "./animate/ZoomIn";
 import { useRouter } from "next/router";
 
 const amarante = Amarante({
