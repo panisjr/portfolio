@@ -5,9 +5,12 @@ import AutoScrollCards from "./animate/AutoScrollCards";
 export default function FrameworksList() {
   const cards = Array.from({ length: 5 });
   return (
-    <div className="pt-10 border-b-2 border-b-gray-300 shadow-lg" id="frameworksList">
+    <div
+      className="pt-10 border-b-2 border-b-gray-300 shadow-lg"
+      id="frameworksList"
+    >
       <div className=" bg-slate-100 text-[#081b2b]">
-        <div className="flex items-center justify-center py-5">
+        <div className="flex items-center justify-center pt-5">
           <p className="text-lg font-semibold text-nowrap">FRAMEWORKS</p>
         </div>
         <div className="flex items-center justify-center overflow-hidden">
