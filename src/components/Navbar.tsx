@@ -71,7 +71,10 @@ export default function Navbar() {
   return (
     <>
       <div className="flex flex-wrap items-center justify-evenly py-5 gap-4">
-        <div className={`${amarante.className} text-4xl cursor-pointer`}>
+        <div
+          onClick={() => router.push("/")}
+          className={`${amarante.className} text-4xl cursor-pointer`}
+        >
           <span className="text-[#20b9f0]">R</span>
           <span>ams</span>
         </div>
