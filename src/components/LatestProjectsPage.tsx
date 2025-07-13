@@ -57,7 +57,7 @@ export default function LatestProjectsPage() {
                 }}
                 className="w-[330px] h-[270px] bg-gray-100 shadow-lg rounded-md flex flex-col items-center justify-center p-2.5 gap-2.5 hover:scale-105 transition-transform duration-300 cursor-pointer"
               >
-                <div className="relative w-full h-full rounded-md border">
+                <div className="relative w-full h-full rounded-md">
                   <Image
                     src={`${item.image}`}
                     alt="Project Image"

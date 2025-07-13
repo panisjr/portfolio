@@ -15,8 +15,8 @@ const lexend = Lexend({
 });
 export default function Index() {
   return (
-    <div className={`${lexend.className} w-screen min-h-screen`}>
-      <main className="w-screen max-w-screen">
+    <div className={`${lexend.className} w-full min-h-screen`}>
+      <main className="w-full max-w-screen">
         <Home />
       </main>
     </div>
