@@ -18,7 +18,7 @@ const latestProject: latestProjectTypes[] = [
     image: "/assets/images/drsLatest.png",
   },
   {
-    projectName: "ATLS - python, react, tensorflow",
+    projectName: "ATLS",
     date: "2024-2025",
     description: "Automated Traffic Ligth System to lessen traffic congestion",
     image: "/assets/images/atls.png",
