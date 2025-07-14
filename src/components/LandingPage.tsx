@@ -27,7 +27,7 @@ export default function LandingPage() {
   };
   return (
     <div className="w-full flex md:flex-nowrap flex-wrap items-center justify-center">
-      <div className="w-full md:max-w-[750px] px-5 md:ps-44 py-16 flex flex-col items-start justify-start">
+      <div className="w-full md:max-w-[950px] px-28 md:ps-48 py-16 flex flex-col items-start justify-start">
         <p>Hello, I&apos;m</p>
         <p className={`${amarante.className} text-5xl`}>Ramel Panis</p>
         <h1 className="text-3xl font-bold text-nowrap">
@@ -75,9 +75,9 @@ export default function LandingPage() {
             </div>
           </PopUpOnLoad>
         </div>
-        <div className="flex items-center justify-start gap-5 py-4">
+        <div className="w-full md:w-fit flex items-center justify-center md:justify-start gap-5 py-4">
           <PopUpOnLoad>
-            <button className="w-[120px] h-[40px] bg-[#20b9f0] rounded-sm text-[#081b2b] font-semibold hover:bg-[#081b2b] hover:text-[#ededed] duration-200 hover:border-[#20b9f0] border-2 border-transparent">
+            <button className="w-[120px] h-[40px] bg-[#20b9f0] rounded-sm text-[#081b2b] font-semibold hover:bg-[#ededed] hover:text-[#081b2b] duration-200 hover:border-[#20b9f0] border-2 border-transparent">
               Hire Me
             </button>
           </PopUpOnLoad>
@@ -91,7 +91,7 @@ export default function LandingPage() {
           </PopUpOnLoad>
         </div>
       </div>
-      <div className="w-full px-5 md:ps-[150px]">
+      <div className="w-fit md:w-full md:flex md:items-center md:justify-start justify-center md:ps-[150px]">
         <ZoomInOnLoad>
           <div className="relative w-[500px] md:w-[400px] h-[600px] rounded-md">
             <Image
@@ -99,7 +99,7 @@ export default function LandingPage() {
               alt="Graduation picture"
               fill
               sizes="w-[500px] h-[600px]"
-              className="object-contain rounded-md"
+              className="md:object-contain object-cover rounded-md"
               priority
             />
           </div>

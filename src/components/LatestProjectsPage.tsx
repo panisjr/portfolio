@@ -61,7 +61,7 @@ export default function LatestProjectsPage() {
                   setOpen(true);
                   setProjectView(item.projectName);
                 }}
-                className="w-[330px] h-[270px] bg-gray-100 shadow-lg rounded-md flex flex-col items-center justify-center p-2.5 gap-2.5 hover:scale-105 transition-transform duration-300 cursor-pointer"
+                className="w-[430px] md:w-[330px] h-[340px] md:h-[270px] bg-gray-100 shadow-lg rounded-md flex flex-col items-center justify-center p-2.5 gap-2.5 hover:scale-105 transition-transform duration-300 cursor-pointer"
               >
                 <div className="relative w-full h-full rounded-md">
                   <Image

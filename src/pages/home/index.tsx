@@ -6,7 +6,7 @@ import FrameworksList from "@/components/FrameworksList";
 
 export default function Home() {
   return (
-    <div className="w-full h-fit">
+    <div className="w-[700px] md:w-full h-fit">
       <div className="mx-auto">
         {/* Header */}
         <Navbar />
