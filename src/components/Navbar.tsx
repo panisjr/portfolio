@@ -82,7 +82,9 @@ export default function Navbar() {
           <NavigationMenuList>
             {/* Home */}
             <NavigationMenuItem className="z-10">
-              <NavigationMenuTrigger>Home</NavigationMenuTrigger>
+              <NavigationMenuTrigger onClick={() => router.push("/")}>
+                Home
+              </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                   <li className="row-span-3">

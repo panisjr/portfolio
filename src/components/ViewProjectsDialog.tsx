@@ -55,6 +55,20 @@ const latestProject: viewProjectTypes[] = [
       { icon: `${loc}/postgresql.png`, name: "PostgreSQL" },
     ],
   },
+  {
+    projectName: "AutoGuardian",
+    description:
+      "AutoGuardian is a comprehensive web-based car management and rental platform that allows users to browse, rent, and manage cars online with ease. Designed for both car rental businesses and individual users, it streamlines vehicle access and rental scheduling.",
+    image: [
+      `${loc}/projects/car/car1.png`,
+      `${loc}/projects/car/car2.png`,
+      `${loc}/projects/car/car3.png`,
+    ],
+    framework: [
+      { icon: `${loc}/angular.png`, name: "Angular" },
+      { icon: `${loc}/laravel.svg`, name: "Laravel" },
+    ],
+  },
 ];
 const lexend = Lexend({
   weight: ["100", "300", "400", "700"],
