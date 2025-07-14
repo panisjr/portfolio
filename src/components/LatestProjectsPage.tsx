@@ -30,6 +30,12 @@ const latestProject: latestProjectTypes[] = [
       "A learning platform focused on programming languages, specifically Java and Python.",
     image: "/assets/images/codePulse.png",
   },
+  {
+    projectName: "AutoGuardian",
+    date: "2023-2024",
+    description: "AutoGuardian is a comprehensive web-based car management and rental platform",
+    image: "/assets/images/projects/car/car2.png",
+  },
 ];
 export default function LatestProjectsPage() {
   const [open, setOpen] = useState<boolean>(false);
@@ -72,7 +78,7 @@ export default function LatestProjectsPage() {
                   <p className="font-thin text-[14px]">
                     {item.description.slice(0, 60) + ". . ."}
                   </p>
-                <p className="text-[10px]">{item.date}</p>
+                  <p className="text-[10px]">{item.date}</p>
                 </div>
               </div>
             </SlideUp>
