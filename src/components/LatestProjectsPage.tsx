@@ -11,6 +11,13 @@ export interface latestProjectTypes {
 }
 const latestProject: latestProjectTypes[] = [
   {
+    projectName: "New Portfolio!",
+    date: "2025-PRESENT",
+    description:
+      "Currently working on my new portofolio from Page Router to App Router",
+    image: "/assets/images/newportfolio.png",
+  },
+  {
     projectName: "DRSchecker - nextjs, gemini api",
     date: "2024-2025",
     description:
@@ -33,7 +40,8 @@ const latestProject: latestProjectTypes[] = [
   {
     projectName: "AutoGuardian",
     date: "2023-2024",
-    description: "AutoGuardian is a comprehensive web-based car management and rental platform",
+    description:
+      "AutoGuardian is a comprehensive web-based car management and rental platform",
     image: "/assets/images/projects/car/car2.png",
   },
 ];
